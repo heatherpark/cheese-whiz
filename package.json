@@ -1,16 +1,18 @@
 {
-  "name": "mvp",
+  "name": "memory-game",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heatherpark/2016-07-solo.git"
   },
   "dependencies": {
-    "express": "~4.0.0",
-    "nodemon": "^1.2.1"
-  },
-  "scripts": {
-    "start": "./node_modules/.bin/nodemon --ignore node_modules index.js"
+    "express": "^4.14.0",
+    "grunt": "^1.0.1",
+    "mongoose": "^4.5.4",
+    "nodemon": "^1.9.2"
   }
 }
