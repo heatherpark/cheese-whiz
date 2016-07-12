@@ -1,7 +1,11 @@
-var userController = require('../users/userController.js');
+var User = require('../users/userModel.js');
+var Q = require('q');
+
+var findUser = Q.nbind(User.findOne, User);
+var createUser = Q.nbind(User.create, User);
 
 module.exports = function (app, express) {
-  app.get('/', function() {
+  app.get('/code', function() {
     console.log('loaded');
   });
 
@@ -19,7 +23,10 @@ module.exports = function (app, express) {
         }
       })
       .then(function(user) {
-        res.json(user);
+        res.send();
+      })
+      .fail(function(error) {
+        next(error);
       });
   });
 };
