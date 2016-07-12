@@ -1,6 +1,13 @@
-<div class="board-container" ng-controller="BoardController">
-  <div class="card"
-    ng-repeat="card in cards track by $index"
-    ng-click="toggleClass($index)"
-    ng-class="{'flipped': toggles[$index]}">{{ card }}</div>
+<div class="quiz-container" ng-controller="QuizController">
+  <h2>{{ question }}</h2>
+
+  <div class="choices">
+    <a class="btn answer"
+      ng-repeat="choice in choices">{{ choice }}</a>
+  </div>
+
+  <a id="btn-bottom">{{ buttonText }}</a>
+  <div id="question-number">
+    Question {{ number }} of {{ length }}
+  </div>
 </div>

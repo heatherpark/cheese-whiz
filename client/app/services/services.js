@@ -1,4 +1,4 @@
-angular.module('memoryGame.services', [])
+angular.module('cheeseWhiz.services', [])
 
 .factory('Questions', function() {
   var data = [
