@@ -37,12 +37,13 @@ angular.module('memoryGame.services', [])
       }
     ];
 
-  var chosen = [];
-  var num = 0;
+  var userInfo = {
+    chosen: [],
+    qNum: 0
+  }
 
   return {
     data: data,
-    chosen: chosen,
-    num: num
+    userInfo: userInfo
   };
 });
