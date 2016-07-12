@@ -62,8 +62,6 @@ angular.module('cheeseWhiz.services', [])
       method: 'POST',
       url: '/signin',
       data: username
-    }).then(function() {
-
     });
   };
 });
