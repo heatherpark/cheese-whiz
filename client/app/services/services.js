@@ -47,6 +47,11 @@ angular.module('cheeseWhiz.services', [])
     userInfo: userInfo
   };
 })
+.factory('Results', ['Questions', function(Questions) {
+  var isCorrect = function(i) {
+    return Questions.userInfo.chosen[i] === Questions.data[i].correct;
+  };
+}])
 .factory('Redirects', function() {
   var loadResults = function() {
 
