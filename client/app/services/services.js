@@ -46,4 +46,9 @@ angular.module('cheeseWhiz.services', [])
     data: data,
     userInfo: userInfo
   };
+})
+.factory('Redirects', function() {
+  var loadResults = function() {
+
+  };
 });

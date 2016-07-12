@@ -19,6 +19,9 @@ angular.module('cheeseWhiz.quiz', [
   };
 
   $scope.nextClick = function() {
+    if ($scope.number === $scope.length - 1) {
+      // call get request to results page
+    }
     Questions.userInfo.qNum++;
     $route.reload();
   };
