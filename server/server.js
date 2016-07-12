@@ -3,16 +3,6 @@ var firebase = require('firebase');
 
 var app = express();
 
-var config = {
-    apiKey: "AIzaSyBMXuckNyGSWalcx_-b64oMg4pOSY2sIYc",
-    authDomain: "quiz-66559.firebaseapp.com",
-    databaseURL: "https://quiz-66559.firebaseio.com",
-    storageBucket: "",
-};
-
-firebase.initializeApp(config);
-
-var db = firebase.database();
 
 require('./config/middleware.js')(app, express);
 require('./config/routes.js')(app, express);
