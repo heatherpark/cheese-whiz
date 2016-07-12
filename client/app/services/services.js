@@ -57,7 +57,11 @@ angular.module('cheeseWhiz.services', [])
   }
 }])
 .factory('Signin', function($http) {
+  var username = '';
+
   var saveUsername = function(username) {
+    username = username;
+    console.log(username);
     return $http({
       method: 'POST',
       url: '/signin',
