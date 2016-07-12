@@ -10,6 +10,7 @@
     "url": "git+https://github.com/heatherpark/2016-07-solo.git"
   },
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "grunt": "^1.0.1",
     "jquery": "^3.1.0",

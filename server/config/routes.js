@@ -1,5 +1,5 @@
 module.exports = function (app, express) {
-  app.get('/', function () {
+  app.get('/', function() {
     console.log('loaded');
   });
 };
