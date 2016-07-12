@@ -64,4 +64,8 @@ angular.module('cheeseWhiz.services', [])
       data: username
     });
   };
+
+  return {
+    saveUsername: saveUsername
+  }
 });

@@ -4,6 +4,6 @@ angular.module('cheeseWhiz.signin', [])
   $scope.user = {};
 
   $scope.addUsername = function() {
-    Signin.saveUserName($scope.user);
+    Signin.saveUsername($scope.user);
   };
 });

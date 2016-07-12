@@ -18,6 +18,9 @@ module.exports = {
           })
         }
       })
+      .then(function(user) {
+        res.json(user);
+      })
       .fail(function(error) {
         next(error);
       });

@@ -16,7 +16,7 @@ var cheeseWhiz = angular.module('cheeseWhiz', [
       controller: 'ResultsController'
     })
     .when('/', {
-      templateUrl: 'app/signin/signinController.js',
+      templateUrl: 'app/signin/signinView.html',
       controller: 'SigninController'
     });
 });
