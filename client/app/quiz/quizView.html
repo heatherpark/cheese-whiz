@@ -3,7 +3,9 @@
 
   <div class="choices">
     <a class="btn answer"
-      ng-repeat="choice in choices">{{ choice }}</a>
+      ng-repeat="choice in choices"
+      ng-click="handleClick($index)"
+      ng-class="{'clicked': toggled.index == $index}">{{ choice }}</a>
   </div>
 
   <a id="btn-bottom">{{ buttonText }}</a>
