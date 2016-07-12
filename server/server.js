@@ -1,4 +1,5 @@
 var express = require('express');
+var firebase = require('firebase');
 
 var app = express();
 
