@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html ng-app="memoryGame">
+<html ng-app="cheeseWhiz">
 <head>
   <meta charset="UTF-8">
-  <title>memory game</title>
+  <title>the cheese whiz quiz</title>
   <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
   <body>
+    <div id="quiz-wrapper">
+    <header>
+      <h1>Are You a Cheese Whiz?</h1>
+
+      <figure>
+      </figure>
+    </header>
 
     <div ng-view></div>
 
@@ -14,8 +21,7 @@
 
     <!-- <script src="app/signin/signinService.js"></script> -->
     <!-- <script src="app/signin/signinController.js"></script> -->
-    <script src="app/board/boardService.js"></script>
-    <script src="app/board/boardController.js"></script>
+    <script src="app/board/quizController.js"></script>
     <!-- <script src="app/board/timesService.js"></script> -->
     <!-- <script src="app/board/timesController.js"></script> -->
     <script src="app/app.js"></script>

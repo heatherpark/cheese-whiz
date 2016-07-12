@@ -2,5 +2,5 @@
   <div class="card"
     ng-repeat="card in cards track by $index"
     ng-click="toggleClass($index)"
-    ng-class="{'flipped': toggleItem.index == $index}">{{ card }}</div>
+    ng-class="{'flipped': toggles[$index]}">{{ card }}</div>
 </div>
