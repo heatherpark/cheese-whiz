@@ -1,5 +1,6 @@
 var cheeseWhiz = angular.module('cheeseWhiz', [
   'cheeseWhiz.quiz',
+  'cheeseWhiz.results',
   'cheeseWhiz.services',
   'ngRoute'
 ])
