@@ -48,7 +48,7 @@ angular.module('cheeseWhiz.services', [])
   };
 })
 .factory('Results', ['Questions', function(Questions) {
-  var isCorrect = function(answer) {
+  var isCorrect = function(answer, i) {
     return answer === Questions.data[i].correct;
   };
 

@@ -2,7 +2,7 @@ angular.module('cheeseWhiz.quiz', [
   'ngRoute'
 ])
 
-.controller('QuizController', function($scope, $route, Questions) {
+.controller('QuizController', function($scope, $route, $location, Questions) {
   $scope.number = Questions.userInfo.qNum;
   $scope.question = Questions.data[$scope.number].question;
   $scope.choices = Questions.data[$scope.number].choices;
@@ -14,15 +14,19 @@ angular.module('cheeseWhiz.quiz', [
   };
 
   $scope.handleClick = function(i) {
+    console.log(i);
     $scope.toggled.index = i;
+    console.log(Questions.userInfo.chosen);
     Questions.userInfo.chosen[$scope.number] = i;
   };
 
   $scope.nextClick = function() {
     if ($scope.number === $scope.length - 1) {
-      // call get request to results page
+      $location.path('/results')
+    } else {
+      Questions.userInfo.qNum++;
+      $route.reload();
     }
-    Questions.userInfo.qNum++;
-    $route.reload();
+
   };
 });

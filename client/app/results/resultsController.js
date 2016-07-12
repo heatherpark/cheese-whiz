@@ -3,14 +3,18 @@ angular.module('cheeseWhiz.results', [
 ])
 
 .controller('ResultsController', function($scope, Questions, Results) {
-  $scope.finalScore = 0;
-  $scope.total = Questions.data.length;
+  $scope.calcScore = function() {
+    $scope.finalScore = 0;
 
-  $scope.calScore = function() {
-    _.forEach(Questions.userInfo.chosen, function(answer) {
-      if (Results.isCorrect(answer)) {
+    Questions.userInfo.chosen.forEach(function(answer, index) {
+      console.log(Questions.userInfo.chosen);
+      if (Results.isCorrect(answer, index)) {
         $scope.finalScore++;
       }
     });
   }
+
+  $scope.calcScore();
+
+  $scope.total = Questions.data.length;
 });
