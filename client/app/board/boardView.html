@@ -1,3 +1,6 @@
 <div class="board-container" ng-controller="BoardController">
-  <div class="card" ng-repeat="card in cards track by $index">{{ card }}</div>
+  <div class="card"
+    ng-repeat="card in cards track by $index"
+    ng-click="toggleClass($index)"
+    ng-class="{'flipped': toggleItem.index == $index}">{{ card }}</div>
 </div>
