@@ -56,8 +56,14 @@ angular.module('cheeseWhiz.services', [])
     isCorrect:isCorrect
   }
 }])
-.factory('Redirects', function() {
-  var loadResults = function() {
+.factory('Signin', function($http) {
+  var saveUsername = function(username) {
+    return $http({
+      method: 'POST',
+      url: '/signin',
+      data: username
+    }).then(function() {
 
+    });
   };
 });
