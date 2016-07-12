@@ -1,5 +1,5 @@
 angular.module('memoryGame.board', [])
 
 .controller('BoardController', function($scope) {
-  $scope.data = 5;
+  $scope.cards = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D'];
 });
