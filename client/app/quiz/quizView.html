@@ -8,8 +8,9 @@
       ng-class="{'clicked': toggled.index == $index}">{{ choice }}</a>
   </div>
 
-  <a id="btn-bottom">{{ buttonText }}</a>
+  <a id="btn-next"
+    ng-click="nextClick()">{{ buttonText }}</a>
   <div id="question-number">
-    Question {{ number }} of {{ length }}
+    Question {{ number + 1 }} of {{ length }}
   </div>
 </div>

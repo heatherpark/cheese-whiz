@@ -1,6 +1,8 @@
-angular.module('cheeseWhiz.quiz', [])
+angular.module('cheeseWhiz.quiz', [
+  'ngRoute'
+])
 
-.controller('QuizController', function($scope, Questions) {
+.controller('QuizController', function($scope, $route, Questions) {
   $scope.number = Questions.userInfo.qNum;
   $scope.question = Questions.data[$scope.number].question;
   $scope.choices = Questions.data[$scope.number].choices;
@@ -14,6 +16,10 @@ angular.module('cheeseWhiz.quiz', [])
   $scope.handleClick = function(i) {
     $scope.toggled.index = i;
     Questions.userInfo.chosen[$scope.number] = i;
-    console.log(Questions.userInfo.chosen);
+  };
+
+  $scope.nextClick = function() {
+    Questions.userInfo.qNum++;
+    $route.reload();
   };
 });
