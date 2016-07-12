@@ -1,11 +1,11 @@
-var memoryGame = angular.module('memoryGame', [
-  'memoryGame.board',
+var cheeseWhiz = angular.module('cheeseWhiz', [
+  'cheeseWhiz.quiz',
   'ngRoute'
 ])
 .config(function($routeProvider, $httpProvider) {
   $routeProvider
-    .when('/board', {
-      templateUrl: 'app/board/boardView.html',
-      controller: 'BoardController'
-    })
+    .when('/quiz', {
+      templateUrl: 'app/quiz/quizView.html',
+      controller: 'QuizController'
+    });
 });
