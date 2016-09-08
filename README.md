@@ -1,4 +1,4 @@
-# Memory Game #
+# The Cheese Whiz Quiz #
 
 <!--
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
@@ -19,22 +19,4 @@ Once the project moves into development, the press release can be used as a touc
 ## A fun game that tests your memory ##
 
 ## Summary ##
-  > Find all of the matching pairs in as little time as possible.  After playing, you'll be able to compare your time with those of previous players.
-
-## Problem ##
-  > If you ever find yourself bored, this is definitely something that can help with that.
-
-## Solution ##
-  > This game engages the brain and forces the player to keep focus for the entire duration.
-
-## Quote from You ##
-  > "I can't believe I get to wake up every day excited to work at a company that makes such a revolutionary product.  It's incredible to know that I've changed tens of lives and counting."
-
-## How to Get Started ##
-  > Simply enter a username for yourself and start clicking the squares to find matches!
-
-## Customer Quote ##
-  > "The hype is real.  As an avid player of the game, I can safely say that my ability to memorize has skyrocketed!  I haven't hesitated to recommend this to all my friends.  In fact, I can even see it being bigger than Pokemon Go."
-
-## Closing ##
-  > Click here to play.
+  > A quiz to test you on your knowledge of cheese trivia.
